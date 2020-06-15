@@ -1,0 +1,58 @@
+
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and republish this document.
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+    
+    \begin{verbatim}
+clear all; clc; close all;
+X=10;
+Y=0;
+Theta_2=atan(Y/X);
+R0_6=[1 0 0; 0 1 0; 0 0 1];
+R0_3=[-sin(Theta_2) 0 cos(Theta_2);
+    cos(Theta_2) 0 sin(Theta_2);
+    0 1 0];
+R3_6 = inv(R0_3)*R0_6
+Theta_5 = acos(R3_6(3,3))
+Theta_6 = acos(R3_6(3,1)/sin(Theta_5))
+Theta_4 = acos(R3_6(2,3)/sin(Theta_5))
+\end{verbatim}
+
+        \color{lightgray} \begin{verbatim}
+R3_6 =
+
+     0     1     0
+     0     0     1
+     1     0     0
+
+
+Theta_5 =
+
+    1.5708
+
+
+Theta_6 =
+
+     0
+
+
+Theta_4 =
+
+     0
+
+\end{verbatim} \color{black}
+    
+
+
+\end{document}
+    
